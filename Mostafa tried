@@ -1,0 +1,39 @@
+trade_shield_pro_flutter.zip
+
+trade_shield_pro/
+│
+├── pubspec.yaml
+│
+├── lib/
+│   ├── main.dart
+│   │
+│   ├── models/
+│   │   ├── order_model.dart
+│   │   ├── signal_model.dart
+│   │   ├── coin_model.dart
+│   │   ├── live_trade_model.dart
+│   │   └── ...
+│   │
+│   ├── services/
+│   │   ├── toobit_service.dart
+│   │   ├── risk_control_service.dart
+│   │   ├── notification_service.dart
+│   │   ├── backtest_engine.dart
+│   │   └── ...
+│   │
+│   ├── screens/
+│   │   ├── login_screen.dart
+│   │   ├── dashboard_screen.dart
+│   │   ├── trade_screen.dart
+│   │   ├── signals_screen.dart
+│   │   ├── watchlist_screen.dart
+│   │   └── settings_screen.dart
+│   │
+│   └── widgets/
+│       ├── signal_card.dart
+│       ├── dashboard_card.dart
+│       └── coin_card.dart
+│
+├── assets/
+│
+└── README.md
