@@ -17,14 +17,20 @@ jobs:
 
       - name: Extract Flutter project
         run: |
+          rm -rf extracted
+          mkdir extracted
           unzip -o trade_shield_pro_flutter_ready.zip -d extracted
-          echo "Project files:"
+          echo "Extracted files:"
           find extracted -maxdepth 3 -type f
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
+
+      - name: Create Android project files
+        working-directory: extracted/trade_shield_pro
+        run: flutter create --platforms=android .
 
       - name: Install dependencies
         working-directory: extracted/trade_shield_pro
